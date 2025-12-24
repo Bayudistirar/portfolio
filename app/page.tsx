@@ -1,66 +1,179 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Sidebar from "@/components/Sidebar";
+import MobileHeader from "@/components/MobileHeader";
+import ExperienceItem from "@/components/ExperienceItem";
+import ProjectCard from "@/components/ProjectCard";
+import CursorSpotlight from "@/components/CursorSpotlight";
+import { EXPERIENCE, PROJECTS, PUBLICATIONS } from "@/lib/constants";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+	return (
+		<div className="flex min-h-screen">
+			<CursorSpotlight />
+			<MobileHeader />
+			<Sidebar />
+
+			<main className="w-full lg:ml-[38.2%] lg:w-[61.8%] px-lg md:px-xl lg:px-3xl pt-[120px] md:pt-[140px] lg:pt-3xl pb-lg md:pb-xl lg:pb-2xl">
+				{/* About Section */}
+				<section
+					id="about"
+					className="mb-2xl lg:mb-3xl scroll-mt-[120px] lg:scroll-mt-2xl"
+				>
+					<div className="mb-xl lg:mb-2xl">
+						<div className="text-xs text-accent tracking-[0.2em] font-medium mb-sm uppercase">
+							01
+						</div>
+						<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-text-primary tracking-tighter">
+							About
+						</h2>
+					</div>
+
+					<div className="space-y-lg lg:space-y-xl">
+						<p className="text-base lg:text-lg text-text-secondary leading-phi">
+							A results-oriented Computer Science student from{" "}
+							<a
+								href="https://www.unud.ac.id/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-accent relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-px after:bg-accent after:opacity-30 hover:text-text-primary hover:after:opacity-100 transition-all duration-300"
+							>
+								Udayana University
+							</a>{" "}
+							with hands-on experience in full-stack development. Proficient in
+							building and maintaining scalable web applications using PHP
+							Laravel, Vue.js, and React.
+						</p>
+
+						<p className="text-base lg:text-lg text-text-secondary leading-phi">
+							Combines strong software development fundamentals with practical
+							IoT and hardware integration experience. Currently maintaining a{" "}
+							<span className="text-accent font-medium">3.74/4.00 GPA</span>{" "}
+							while specializing in wireless sensor networks and developing
+							intelligent systems that bridge the gap between embedded systems
+							and modern web technologies.
+						</p>
+
+						<p className="text-base lg:text-lg text-text-secondary leading-phi">
+							Published research on fuzzy logic-based IoT systems in national
+							journals, with a focus on creating practical solutions for
+							real-world problems. Eager to contribute to innovative,
+							user-centric solutions that leverage the intersection of hardware
+							and software engineering.
+						</p>
+					</div>
+				</section>
+
+				{/* Experience Section */}
+				<section
+					id="experience"
+					className="mb-2xl lg:mb-3xl scroll-mt-[120px] lg:scroll-mt-2xl"
+				>
+					<div className="mb-xl lg:mb-2xl">
+						<div className="text-xs text-accent tracking-[0.2em] font-medium mb-sm uppercase">
+							02
+						</div>
+						<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-text-primary tracking-tighter">
+							Experience
+						</h2>
+					</div>
+
+					<div className="space-y-lg lg:space-y-xl">
+						{EXPERIENCE.map((exp) => (
+							<ExperienceItem key={exp.id} {...exp} />
+						))}
+					</div>
+				</section>
+
+				{/* Projects Section */}
+				<section
+					id="projects"
+					className="mb-2xl lg:mb-3xl scroll-mt-[120px] lg:scroll-mt-2xl"
+				>
+					<div className="mb-xl lg:mb-2xl">
+						<div className="text-xs text-accent tracking-[0.2em] font-medium mb-sm uppercase">
+							03
+						</div>
+						<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-text-primary tracking-tighter">
+							Projects
+						</h2>
+					</div>
+
+					<div className="space-y-lg lg:space-y-xl">
+						{PROJECTS.map((project) => (
+							<ProjectCard key={project.id} {...project} />
+						))}
+					</div>
+				</section>
+
+				{/* Publications Section */}
+				<section
+					id="publications"
+					className="mb-2xl lg:mb-3xl scroll-mt-[120px] lg:scroll-mt-2xl"
+				>
+					<div className="mb-xl lg:mb-2xl">
+						<div className="text-xs text-accent tracking-[0.2em] font-medium mb-sm uppercase">
+							04
+						</div>
+						<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-text-primary tracking-tighter">
+							Publications
+						</h2>
+					</div>
+
+					<div className="space-y-lg lg:space-y-xl">
+						{PUBLICATIONS.map((pub) => {
+							const content = (
+								<>
+									<h3 className="text-xl md:text-2xl lg:text-2xl font-medium text-text-primary mb-sm group-hover:text-accent transition-colors duration-300">
+										{pub.title}
+									</h3>
+									<div className="text-sm lg:text-base text-text-secondary mb-md">
+										{pub.journal} · {pub.volume} · {pub.pages}
+									</div>
+									<div className="text-xs text-accent uppercase tracking-wider mb-md">
+										{pub.role} · {pub.year}
+									</div>
+									<p className="text-base lg:text-lg text-text-secondary leading-phi">
+										{pub.description}
+									</p>
+								</>
+							);
+
+							const baseClasses =
+								"p-lg md:p-xl bg-bg-secondary border border-border rounded transition-all duration-700";
+							const hoverClasses =
+								"hover:bg-bg-tertiary hover:border-accent/30 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(255,107,53,0.12),0_0_48px_rgba(255,107,53,0.08)] group";
+
+							return pub.link ? (
+								<a
+									key={pub.id}
+									href={pub.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									className={`block ${baseClasses} ${hoverClasses}`}
+								>
+									{content}
+								</a>
+							) : (
+								<div key={pub.id} className={baseClasses}>
+									{content}
+								</div>
+							);
+						})}
+					</div>
+				</section>
+
+				{/* Footer */}
+				<footer className="pt-lg lg:pt-xl mt-lg lg:mt-xl border-t border-border">
+					<div className="space-y-md">
+						<p className="text-sm lg:text-base text-text-muted">
+							Designed & built by Bayu Yudistira Ramadhan
+						</p>
+						<p className="text-xs lg:text-sm text-text-muted/70">
+							Built with Next.js, TypeScript & Tailwind CSS
+						</p>
+						<p className="text-xs text-text-muted/70">Denpasar, Bali · 2024</p>
+					</div>
+				</footer>
+			</main>
+		</div>
+	);
 }
