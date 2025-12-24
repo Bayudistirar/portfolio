@@ -32,6 +32,13 @@ export const SOCIAL_LINKS = {
 	email: "mailto:bayuramadhaan81@gmail.com",
 };
 
+// Email obfuscation helper (use in components to prevent spam bots)
+export const getEmail = () => {
+	const user = "bayuramadhaan81";
+	const domain = "gmail.com";
+	return `${user}@${domain}`;
+};
+
 // Experience Data
 export const EXPERIENCE = [
 	{
