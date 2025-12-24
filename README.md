@@ -19,23 +19,6 @@ A minimalist portfolio website built with mathematical precision using the golde
 - **Fonts:** JetBrains Mono, Playfair Display
 - **Deployment:** Vercel
 
-## 🚀 Quick Start
-```bash
-# Clone the repository
-git clone https://github.com/Bayudistirar/portfolio.git
-
-# Navigate to directory
-cd portfolio
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
 ## 📁 Project Structure
 ```
 portfolio/
@@ -71,7 +54,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ## 🌐 Live Demo
 
-[View Live Portfolio](https://portfolio-bayudistirar.vercel.app) *(update this after deployment)*
+[View Live Portfolio](https://bayudistira.vercel.app/) *(update this after deployment)*
 
 ---
 
