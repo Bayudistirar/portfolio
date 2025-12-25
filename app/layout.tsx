@@ -18,7 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-	title: "Bayu Yudistira Ramadhan - Computer Science Student",
+	title: "Bayu Yudistira Ramadhan",
 	description:
 		"Computer Science student specializing in IoT systems, machine learning, and full-stack development.",
 	icons: {

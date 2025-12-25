@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
 import MobileHeader from "@/components/MobileHeader";
 import ExperienceItem from "@/components/ExperienceItem";
@@ -6,8 +8,21 @@ import CursorSpotlight from "@/components/CursorSpotlight";
 import { EXPERIENCE, PROJECTS, PUBLICATIONS } from "@/lib/constants";
 
 export default function Home() {
+	// Initialize state based on session storage
+	const [isLoaded] = useState(() => {
+		if (typeof window === "undefined") return false;
+		const hasVisited = sessionStorage.getItem("hasVisited");
+		if (!hasVisited) {
+			sessionStorage.setItem("hasVisited", "true");
+			return false; // First visit - start hidden
+		}
+		return true; // Return visit - start visible
+	});
+
 	return (
-		<div className="flex min-h-screen">
+		<div
+			className={`flex min-h-screen transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0 animate-fade-in"}`}
+		>
 			<CursorSpotlight />
 			<MobileHeader />
 			<Sidebar />
