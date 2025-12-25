@@ -69,23 +69,29 @@ export const EXPERIENCE = [
 export const PROJECTS = [
 	{
 		id: 1,
-		title: "IoT-Based Automatic Door Control System",
+		title: "IoT Door Locking Control System",
 		year: "2024",
-		description:
-			"ESP32-based automatic gate system with RFID/PIN authentication and proximity sensors for secure residential access control. Integrated conductive foil sensors on handles to differentiate interior/exterior access and servo actuators for automated gate operation. Implemented intelligent positioning control with magnetic sensors to ensure precise gate movement and safety stops.",
-		tech: ["ESP32", "RFID", "Servo Control", "Security Systems", "Arduino"],
-		link: null,
-		icon: "🚪",
-	},
-	{
-		id: 2,
-		title: "Soil Moisture and Temperature Detection",
-		year: "2023",
 		description:
 			"IoT-based system to maintain optimal growing conditions for Aloe vera by monitoring soil moisture and temperature. Utilized Arduino Uno to process real-time data from LM35 temperature sensor and SEN1 soil moisture sensor. Developed Fuzzy Logic control system in MATLAB to automatically activate water pump and fan. Built and tested virtual prototype using Tinkercad simulation platform.",
 		tech: ["Arduino Uno", "Fuzzy Logic", "MATLAB", "Tinkercad", "IoT"],
 		link: null,
+		icon: "🔐",
+		image: "/projects/door-lock.jpg", // Add your image here
+		github: null, // We'll add this next
+		demo: null, // We'll add this next
+	},
+	{
+		id: 2,
+		title: "Soil Moisture Detection for Aloe Vera",
+		year: "2023",
+		description:
+			"Developed RESTful API using Node.js and Express for real-time sensor data processing. Implemented WebSocket communication for live monitoring dashboard. Created data visualization using Chart.js showing temperature and humidity trends.",
+		tech: ["ESP32", "Firebase", "Sensors", "IoT"],
+		link: null,
 		icon: "🌱",
+		image: "/projects/soil-moisture.jpg", // Add your image here
+		github: null,
+		demo: null,
 	},
 ];
 
