@@ -210,7 +210,7 @@ export default function Home() {
 						Next.js · TypeScript · Tailwind CSS
 					</p>
 					<p className="text-xs text-text-muted/60 mt-md">
-						Denpasar, Bali · 2024
+						Denpasar, Bali · 2025
 					</p>
 				</footer>
 			</main>
