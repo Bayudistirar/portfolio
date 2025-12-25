@@ -206,10 +206,10 @@ export default function Home() {
 					<p className="text-sm text-text-muted mb-sm">
 						Designed & built by Bayu Yudistira Ramadhan
 					</p>
-					<p className="text-xs text-text-muted/60">
+					<p className="text-xs text-text-muted opacity-75">
 						Next.js · TypeScript · Tailwind CSS
 					</p>
-					<p className="text-xs text-text-muted/60 mt-md">
+					<p className="text-xs text-text-muted opacity-75 mt-md">
 						Denpasar, Bali · 2025
 					</p>
 				</footer>
