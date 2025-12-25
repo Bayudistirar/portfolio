@@ -5,6 +5,7 @@ import MobileHeader from "@/components/MobileHeader";
 import ExperienceItem from "@/components/ExperienceItem";
 import ProjectCard from "@/components/ProjectCard";
 import CursorSpotlight from "@/components/CursorSpotlight";
+import PublicationCard from "@/components/PublicationCard";
 import { EXPERIENCE, PROJECTS, PUBLICATIONS } from "@/lib/constants";
 
 export default function Home() {
@@ -142,77 +143,9 @@ export default function Home() {
 					</div>
 
 					<div className="space-y-lg lg:space-y-xl">
-						{PUBLICATIONS.map((pub) => {
-							const content = (
-								<>
-									<div className="flex items-start justify-between mb-sm">
-										<div className="flex-1">
-											<h3 className="text-lg md:text-xl font-semibold text-text-primary mb-xs group-hover:text-accent transition-colors duration-300 leading-tight">
-												{pub.title}
-											</h3>
-											<div className="text-xs text-accent uppercase tracking-wider font-semibold mb-sm">
-												{pub.type}
-											</div>
-										</div>
-										{pub.link && (
-											<svg
-												width="16"
-												height="16"
-												viewBox="0 0 24 24"
-												fill="none"
-												stroke="currentColor"
-												strokeWidth="2"
-												className="text-text-muted group-hover:text-accent transition-colors duration-300 flex-shrink-0 ml-md"
-											>
-												<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-												<polyline points="15 3 21 3 21 9" />
-												<line x1="10" y1="14" x2="21" y2="3" />
-											</svg>
-										)}
-									</div>
-
-									<div className="text-sm text-text-secondary mb-xs">
-										{pub.journal}
-									</div>
-									<div className="text-xs text-text-muted mb-md">
-										{pub.volume} {pub.pages && `· ${pub.pages}`}
-									</div>
-
-									<p className="text-sm md:text-base text-text-secondary leading-phi mb-md">
-										{pub.description}
-									</p>
-
-									<div className="flex items-center gap-md text-xs text-text-muted">
-										<span className="font-semibold text-accent">
-											{pub.role}
-										</span>
-										<span>·</span>
-										<span>{pub.year}</span>
-									</div>
-								</>
-							);
-
-							const baseClasses =
-								"p-lg md:p-xl bg-bg-secondary border border-border rounded transition-all duration-700";
-							const hoverClasses =
-								"hover:bg-bg-tertiary hover:border-accent/30 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(255,107,53,0.12),0_0_48px_rgba(255,107,53,0.08)] group";
-
-							return pub.link ? (
-								<a
-									key={pub.id}
-									href={pub.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									className={`block ${baseClasses} ${hoverClasses}`}
-								>
-									{content}
-								</a>
-							) : (
-								<div key={pub.id} className={`${baseClasses}`}>
-									{content}
-								</div>
-							);
-						})}
+						{PUBLICATIONS.map((pub) => (
+							<PublicationCard key={pub.id} {...pub} />
+						))}
 					</div>
 				</section>
 
