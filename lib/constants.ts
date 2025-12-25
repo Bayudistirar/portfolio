@@ -65,6 +65,7 @@ export const PROJECTS = [
 			"Intelligent credit assessment using fuzzy logic for 5C analysis. Built with MATLAB and web interface. Officially copyrighted by Indonesian Ministry of Law.",
 		tech: ["MATLAB", "Fuzzy Logic", "Decision Support System"],
 		icon: "💳",
+		link: "https://pdki-indonesia.dgip.go.id/detail/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
 		github: "https://github.com/Bayudistirar/fuzzy-credit-system",
 	},
 	{
@@ -85,7 +86,7 @@ export const PROJECTS = [
 			"Full-featured content management system with Laravel backend and Vue.js frontend. User authentication, RBAC, content versioning, and media management.",
 		tech: ["PHP", "Laravel", "Vue.js", "MySQL"],
 		icon: "📝",
-		github: "https://github.com/Bayudistirar/LOKACMS-PKL-BAYU",
+		demo: "https://www.figma.com/proto/bo7B3d7uEJK5yJpyOuIHWf/PKL?page-id=0%3A1&node-id=55-48&p=f&viewport=363%2C-1373%2C0.09&t=9825OYFGVR8y5Nxs-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=55%3A48",
 	},
 ];
 
@@ -116,6 +117,6 @@ export const PUBLICATIONS = [
 		type: "Copyright",
 		description:
 			"Official copyright registration for fuzzy logic-based credit feasibility decision support system implementing 5C credit analysis.",
-		link: null,
+		link: "https://pdki-indonesia.dgip.go.id/detail/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
 	},
 ];
