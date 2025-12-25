@@ -28,13 +28,13 @@ export default function ExperienceItem({
 				{date}
 			</div>
 			<div>
-				<h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-text-primary mb-xs group-hover:text-accent transition-colors duration-300 leading-tight">
+				<h3 className="text-lg md:text-xl font-semibold text-text-primary mb-xs group-hover:text-accent transition-colors duration-300 leading-tight">
 					{role}
 				</h3>
-				<div className="text-base lg:text-lg text-text-secondary mb-md">
+				<div className="text-sm md:text-base text-text-secondary mb-md">
 					{company} · {type}
 				</div>
-				<p className="text-sm md:text-base lg:text-base text-text-secondary leading-phi mb-md">
+				<p className="text-sm text-text-secondary leading-phi mb-md">
 					{description}
 				</p>
 				<div className="flex flex-wrap gap-xs md:gap-sm">
