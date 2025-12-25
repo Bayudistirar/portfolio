@@ -7,6 +7,7 @@ import ProjectCard from "@/components/ProjectCard";
 import PublicationCard from "@/components/PublicationCard";
 import CursorSpotlight from "@/components/CursorSpotlight";
 import ScrollProgress from "@/components/ScrollProgress";
+import BackToTop from "@/components/BackToTop";
 import { EXPERIENCE, PROJECTS, PUBLICATIONS } from "@/lib/constants";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
 			<CursorSpotlight />
 			<MobileHeader />
 			<Sidebar />
+			<BackToTop />
 
 			<main className="w-full lg:ml-[38.2%] lg:w-[61.8%] px-lg md:px-xl lg:px-3xl pt-[120px] md:pt-[140px] lg:pt-3xl pb-lg md:pb-xl lg:pb-2xl">
 				{/* About Section */}
