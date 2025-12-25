@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { JetBrains_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
@@ -14,17 +13,21 @@ const playfair = Playfair_Display({
 	variable: "--font-playfair",
 });
 
-export const metadata: Metadata = {
-	title: "Bayu Yudistira Ramadhan - Computer Science Student",
+export const metadata = {
+	title: "Bayu Yudistira Ramadhan",
 	description:
 		"Computer Science student specializing in IoT systems, machine learning, and full-stack development.",
+	icons: {
+		icon: "/favicon.ico",
+		apple: "/logo.png",
+	},
 };
 
 export default function RootLayout({
 	children,
-}: Readonly<{
+}: {
 	children: React.ReactNode;
-}>) {
+}) {
 	return (
 		<html lang="en">
 			<body

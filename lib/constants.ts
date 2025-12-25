@@ -100,8 +100,22 @@ export const PUBLICATIONS = [
 		volume: "Vol. 3 No. 1",
 		pages: "pp. 189-194",
 		role: "First Author",
+		type: "Research Paper",
 		description:
-			"IoT monitoring system using fuzzy logic for optimal Aloe vera cultivation.",
+			"IoT monitoring system using fuzzy logic for optimal Aloe vera cultivation conditions.",
 		link: "http://ojs.unud.ac.id/index.php/jnatia/article/download/115988/57452/",
+	},
+	{
+		id: 2,
+		title: "Sistem Fuzzy Pendukung Keputusan Kelayakan Kredit 5C",
+		year: "2025",
+		journal: "Kementerian Hukum dan HAM Republik Indonesia",
+		volume: "Sentra HKI UNUD",
+		pages: "Registration No. 000850583",
+		role: "Creator",
+		type: "Copyright",
+		description:
+			"Official copyright registration for fuzzy logic-based credit feasibility decision support system implementing 5C credit analysis.",
+		link: null,
 	},
 ];
