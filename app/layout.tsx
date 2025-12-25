@@ -18,11 +18,13 @@ const playfair = Playfair_Display({
 	preload: true,
 });
 
+const siteUrl = "https://bayudistira.vercel.app";
+
 export const metadata: Metadata = {
-	title:
-		"Bayu Yudistira Ramadhan - Computer Science Student & Full Stack Developer",
+	metadataBase: new URL(siteUrl),
+	title: "Bayu Yudistira Ramadhan | IoT & Full-Stack Developer",
 	description:
-		"Computer Science student from Udayana University specializing in IoT systems, machine learning, and full-stack development. Published researcher with experience in Laravel, Vue.js, React, and embedded systems. Based in Bali, Indonesia.",
+		"Computer Science student at Udayana University specializing in IoT systems, machine learning, and full-stack web development with Laravel, Vue.js, and React. Published researcher in fuzzy logic systems with hands-on experience building intelligent solutions.",
 	keywords: [
 		"Bayu Yudistira Ramadhan",
 		"Computer Science",
@@ -30,16 +32,18 @@ export const metadata: Metadata = {
 		"IoT Systems",
 		"Machine Learning",
 		"Udayana University",
-		"Laravel",
-		"Vue.js",
-		"React",
+		"Laravel Developer",
+		"Vue.js Developer",
+		"React Developer",
 		"Next.js",
 		"Arduino",
 		"Fuzzy Logic",
-		"Indonesia",
+		"Indonesia Developer",
 		"Bali",
 		"Web Development",
 		"Embedded Systems",
+		"ESP32",
+		"MATLAB",
 	],
 	authors: [{ name: "Bayu Yudistira Ramadhan" }],
 	creator: "Bayu Yudistira Ramadhan",
@@ -62,31 +66,32 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://bayudistira.vercel.app",
-		title: "Bayu Yudistira Ramadhan - Computer Science Student & Developer",
+		url: siteUrl,
+		title:
+			"Bayu Yudistira Ramadhan | IoT & Full-Stack Developer from Indonesia",
 		description:
-			"Computer Science student specializing in IoT, machine learning, and full-stack development. Published researcher from Udayana University, Indonesia.",
-		siteName: "Bayu Yudistira Ramadhan Portfolio",
+			"Computer Science student specializing in IoT systems, machine learning, and full-stack development. Published researcher with experience in Laravel, Vue.js, React, and embedded systems. Building intelligent solutions at Udayana University, Bali.",
+		siteName: "Bayu Yudistira Ramadhan",
 		images: [
 			{
-				url: "https://bayudistira.vercel.app/og-image.png", // We'll create this
+				url: "/api/og", // Changed to use dynamic OG image
 				width: 1200,
 				height: 630,
-				alt: "Bayu Yudistira Ramadhan - Portfolio",
+				alt: "Bayu Yudistira Ramadhan - IoT & Full-Stack Developer",
+				type: "image/png",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Bayu Yudistira Ramadhan - Computer Science Student",
+		title: "Bayu Yudistira Ramadhan | IoT & Full-Stack Developer",
 		description:
-			"IoT systems, machine learning, and full-stack development. Published researcher from Bali, Indonesia.",
-		images: ["https://bayudistira.vercel.app/og-image.png"],
+			"Computer Science student specializing in IoT, machine learning, and full-stack development. Published researcher building intelligent solutions with Laravel, Vue.js, and React.",
+		images: ["/api/og"], // Changed to use dynamic OG image
 	},
 	verification: {
-		// Add these later if you want
+		// Add these later if you want Google Search Console
 		// google: "your-google-verification-code",
-		// yandex: "your-yandex-verification-code",
 	},
 };
 
@@ -113,9 +118,11 @@ export default function RootLayout({
 							"@context": "https://schema.org",
 							"@type": "Person",
 							name: "Bayu Yudistira Ramadhan",
-							url: "https://bayudistira.vercel.app",
-							image: "https://bayudistira.vercel.app/logo.png",
+							url: siteUrl,
+							image: `${siteUrl}/logo.png`,
 							jobTitle: "Computer Science Student & Full Stack Developer",
+							description:
+								"IoT systems specialist and full-stack developer with published research in fuzzy logic systems",
 							worksFor: {
 								"@type": "Organization",
 								name: "Udayana University",
@@ -128,7 +135,7 @@ export default function RootLayout({
 								"@type": "PostalAddress",
 								addressLocality: "Denpasar",
 								addressRegion: "Bali",
-								addressCountry: "Indonesia",
+								addressCountry: "ID",
 							},
 							sameAs: [
 								"https://github.com/Bayudistirar",
@@ -144,8 +151,10 @@ export default function RootLayout({
 								"React",
 								"Next.js",
 								"Arduino",
+								"ESP32",
 								"Fuzzy Logic",
 								"Embedded Systems",
+								"Web Development",
 							],
 						}),
 					}}
