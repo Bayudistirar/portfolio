@@ -27,7 +27,6 @@ export default function ProjectCard({
 }: ProjectCardProps) {
 	const { ref, isVisible } = useScrollAnimation<HTMLDivElement>();
 
-	// Primary link priority: link > github > demo
 	const primaryLink = link || github || demo;
 
 	const content = (
@@ -51,10 +50,10 @@ export default function ProjectCard({
 			<div className="flex-1">
 				<div className="flex items-start justify-between mb-xs md:mb-sm">
 					<div>
-						<h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-text-primary mb-xs group-hover:text-accent transition-colors duration-300 leading-tight">
+						<h3 className="text-lg md:text-xl font-semibold text-text-primary mb-xs group-hover:text-accent transition-colors duration-300 leading-tight">
 							{title}
 						</h3>
-						<div className="text-xs lg:text-sm text-text-muted uppercase tracking-[0.15em] font-semibold">
+						<div className="text-xs text-text-muted uppercase tracking-[0.15em] font-semibold">
 							{year}
 						</div>
 					</div>
@@ -81,14 +80,14 @@ export default function ProjectCard({
 					{tech.map((item, index) => (
 						<span
 							key={index}
-							className="px-sm py-xs bg-accent/10 text-accent text-[0.688rem] lg:text-xs rounded font-semibold uppercase tracking-wide"
+							className="px-sm py-xs bg-accent/10 text-accent text-[0.688rem] rounded font-semibold uppercase tracking-wide"
 						>
 							{item}
 						</span>
 					))}
 				</div>
 
-				{/* GitHub and Demo Links - only show if NOT the primary link */}
+				{/* GitHub and Demo Links */}
 				{((github && github !== primaryLink) ||
 					(demo && demo !== primaryLink)) && (
 					<div className="flex gap-md">
