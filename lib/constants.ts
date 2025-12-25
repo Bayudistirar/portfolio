@@ -69,27 +69,53 @@ export const EXPERIENCE = [
 export const PROJECTS = [
 	{
 		id: 1,
-		title: "IoT Door Locking Control System",
-		year: "2024",
+		title: "Fuzzy Credit Scoring Decision Support System",
+		year: "2024 - 2025",
 		description:
-			"IoT-based system to maintain optimal growing conditions for Aloe vera by monitoring soil moisture and temperature. Utilized Arduino Uno to process real-time data from LM35 temperature sensor and SEN1 soil moisture sensor. Developed Fuzzy Logic control system in MATLAB to automatically activate water pump and fan. Built and tested virtual prototype using Tinkercad simulation platform.",
-		tech: ["Arduino Uno", "Fuzzy Logic", "MATLAB", "Tinkercad", "IoT"],
+			"Developed intelligent credit assessment system using fuzzy logic algorithm implementing 5C credit analysis (Character, Capacity, Capital, Collateral, Condition). Built with MATLAB for fuzzy inference engine and web interface for user interaction. Officially copyrighted by Indonesian Ministry of Law (Registration No. 000850583).",
+		tech: [
+			"MATLAB",
+			"Fuzzy Logic",
+			"Decision Support System",
+			"Credit Scoring",
+			"Web Interface",
+		],
 		link: null,
-		icon: "🔐",
-		image: "/projects/door-lock.jpg", // Add your image here
-		github: null, // We'll add this next
-		demo: null, // We'll add this next
+		icon: "💳",
+		image: null,
+		github: "https://github.com/Bayudistirar/fuzzy-credit-system",
+		demo: null,
 	},
 	{
 		id: 2,
-		title: "Soil Moisture Detection for Aloe Vera",
-		year: "2023",
+		title: "IoT Aloe Vera Monitoring System",
+		year: "2023 - 2024",
 		description:
-			"Developed RESTful API using Node.js and Express for real-time sensor data processing. Implemented WebSocket communication for live monitoring dashboard. Created data visualization using Chart.js showing temperature and humidity trends.",
-		tech: ["ESP32", "Firebase", "Sensors", "IoT"],
+			"IoT-based system maintaining optimal Aloe vera growing conditions through automated monitoring and control. Processes real-time data from LM35 temperature and SEN1 soil moisture sensors using Arduino Uno. Implements fuzzy logic control in MATLAB to automatically activate water pump and cooling fan based on environmental conditions.",
+		tech: [
+			"Arduino Uno",
+			"Fuzzy Logic",
+			"MATLAB",
+			"Tinkercad",
+			"IoT",
+			"Sensor Integration",
+		],
 		link: null,
 		icon: "🌱",
-		image: "/projects/soil-moisture.jpg", // Add your image here
+		image: null,
+		github: null,
+		demo: null,
+	},
+	{
+		id: 3,
+		title: "ESP32 IoT Door Control System",
+		year: "2024",
+		description:
+			"Smart door locking system with remote monitoring and control capabilities. Built RESTful API using Node.js and Express for real-time sensor data processing. Implemented WebSocket communication for live dashboard monitoring with temperature and humidity trend visualization using Chart.js.",
+		tech: ["ESP32", "Node.js", "Express", "WebSocket", "Chart.js", "Firebase"],
+		link: null,
+		icon: "🔐",
+		image: null,
 		github: null,
 		demo: null,
 	},

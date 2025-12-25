@@ -71,7 +71,7 @@ export default function ProjectCard({
 						</svg>
 					)}
 				</div>
-				<p className="text-base lg:text-lg text-text-secondary leading-phi mb-sm md:mb-md">
+				<p className="text-sm md:text-base text-text-secondary leading-phi mb-sm md:mb-md">
 					{description}
 				</p>
 				<div className="flex flex-wrap gap-xs md:gap-sm mb-md">
