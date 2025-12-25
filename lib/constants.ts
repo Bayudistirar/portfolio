@@ -101,12 +101,13 @@ export const PROJECTS = [
 	},
 	{
 		id: 3,
-		title: "ESP32 IoT Door Control System",
+		title: "LOKACMS - Custom Content Management System",
 		year: "2024",
 		description:
-			"Smart door locking system with remote monitoring and control capabilities. Built RESTful API using Node.js and Express for real-time sensor data processing. Implemented WebSocket communication for live dashboard monitoring with temperature and humidity trend visualization using Chart.js.",
-		tech: ["ESP32", "Node.js", "Express", "WebSocket", "Chart.js", "Firebase"],
-		icon: "🔐",
+			"Full-featured CMS platform developed during internship at PT Econdelight. Built with PHP Laravel for robust backend architecture and Vue.js for dynamic, reactive frontend. Implemented user authentication, role-based access control, content versioning, and media management. Optimized database queries resulting in improved page load performance.",
+		tech: ["PHP", "Laravel", "Vue.js", "MySQL", "Authentication", "CMS"],
+		icon: "📝",
+		github: "https://github.com/Bayudistirar/LOKACMS-PKL-BAYU",
 	},
 ];
 

@@ -17,15 +17,17 @@ export default function Sidebar() {
 					{PERSONAL_INFO.title}
 				</h2>
 
-				<p className="text-base text-text-muted leading-phi mb-xl max-w-[61.8%]">
+				<p className="text-base text-text-muted leading-phi mb-2xl max-w-[61.8%]">
 					{PERSONAL_INFO.tagline}
 				</p>
 
-				{/* Resume Download Button */}
+				<Navigation items={NAV_ITEMS} />
+
+				{/* Resume Download Button - moved here */}
 				<a
 					href="/resume.pdf"
 					download="Bayu_Yudistira_Ramadhan_Resume.pdf"
-					className="inline-flex items-center gap-sm px-lg py-md bg-accent/10 hover:bg-accent/20 border border-accent/30 hover:border-accent text-accent rounded transition-all duration-300 mb-2xl group"
+					className="inline-flex items-center gap-sm px-lg py-md bg-accent/10 hover:bg-accent/20 border border-accent/30 hover:border-accent text-accent rounded transition-all duration-300 mt-xl group"
 				>
 					<svg
 						width="16"
@@ -42,8 +44,6 @@ export default function Sidebar() {
 					</svg>
 					<span className="text-sm font-medium">Download Resume</span>
 				</a>
-
-				<Navigation items={NAV_ITEMS} />
 			</div>
 
 			<SocialLinks />
