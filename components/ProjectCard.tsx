@@ -7,11 +7,11 @@ interface ProjectCardProps {
 	year: string;
 	description: string;
 	tech: string[];
-	link?: string | null; // Make optional
+	link?: string | null;
 	icon: string;
-	image?: string; // Already optional
-	github?: string | null; // Make optional
-	demo?: string | null; // Make optional
+	image?: string;
+	github?: string | null;
+	demo?: string | null;
 }
 
 export default function ProjectCard({
@@ -26,6 +26,9 @@ export default function ProjectCard({
 	demo,
 }: ProjectCardProps) {
 	const { ref, isVisible } = useScrollAnimation<HTMLDivElement>();
+
+	// Primary link priority: link > github > demo
+	const primaryLink = link || github || demo;
 
 	const content = (
 		<>
@@ -55,7 +58,7 @@ export default function ProjectCard({
 							{year}
 						</div>
 					</div>
-					{(link || github || demo) && (
+					{primaryLink && (
 						<svg
 							width="16"
 							height="16"
@@ -85,10 +88,11 @@ export default function ProjectCard({
 					))}
 				</div>
 
-				{/* GitHub and Demo Links */}
-				{(github || demo) && (
+				{/* GitHub and Demo Links - only show if NOT the primary link */}
+				{((github && github !== primaryLink) ||
+					(demo && demo !== primaryLink)) && (
 					<div className="flex gap-md">
-						{github && (
+						{github && github !== primaryLink && (
 							<a
 								href={github}
 								target="_blank"
@@ -107,7 +111,7 @@ export default function ProjectCard({
 								Code
 							</a>
 						)}
-						{demo && (
+						{demo && demo !== primaryLink && (
 							<a
 								href={demo}
 								target="_blank"
@@ -143,10 +147,10 @@ export default function ProjectCard({
 	const hoverClasses =
 		"hover:bg-bg-tertiary hover:border-accent/30 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(255,107,53,0.12),0_0_48px_rgba(255,107,53,0.08)] group";
 
-	return link ? (
+	return primaryLink ? (
 		<a
 			ref={ref as unknown as React.RefObject<HTMLAnchorElement>}
-			href={link}
+			href={primaryLink}
 			target="_blank"
 			rel="noopener noreferrer"
 			className={`${baseClasses} ${hoverClasses}`}
