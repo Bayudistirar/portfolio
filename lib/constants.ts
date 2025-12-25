@@ -85,19 +85,20 @@ export const PROJECTS = [
 	},
 	{
 		id: 2,
-		title: "IoT Aloe Vera Monitoring System",
-		year: "2023 - 2024",
+		title: "IoT Aloe Vera Plant Monitoring with Fuzzy Logic",
+		year: "2024",
 		description:
-			"IoT-based system maintaining optimal Aloe vera growing conditions through automated monitoring and control. Processes real-time data from LM35 temperature and SEN1 soil moisture sensors using Arduino Uno. Implements fuzzy logic control in MATLAB to automatically activate water pump and cooling fan based on environmental conditions.",
+			"Published research on IoT-based automated monitoring system for optimal Aloe vera cultivation conditions. Developed fuzzy logic control algorithm in MATLAB to process real-time sensor data (LM35 temperature, SEN1 soil moisture) and automatically regulate water pump and cooling fan. Simulated and tested using Tinkercad virtual prototyping platform. Published in Jurnal Nasional Teknologi Informasi dan Aplikasinya (Vol. 3 No. 1, pp. 189-194).",
 		tech: [
 			"Arduino Uno",
 			"Fuzzy Logic",
 			"MATLAB",
-			"Tinkercad",
 			"IoT",
-			"Sensor Integration",
+			"Tinkercad",
+			"Research",
 		],
 		icon: "🌱",
+		link: "http://ojs.unud.ac.id/index.php/jnatia/article/download/115988/57452/",
 	},
 	{
 		id: 3,
