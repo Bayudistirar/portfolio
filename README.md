@@ -20,6 +20,7 @@ A minimalist portfolio website built with mathematical precision using the golde
 - **Deployment:** Vercel
 
 ## 📁 Project Structure
+
 ```
 portfolio/
 ├── app/                 # Next.js app directory
@@ -54,7 +55,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ## 🌐 Live Demo
 
-[View Live Portfolio](https://bayudistira.vercel.app/) *(update this after deployment)*
+[View Live Portfolio](https://bayudistira.vercel.app/) _(update this after deployment)_
 
 ---
 

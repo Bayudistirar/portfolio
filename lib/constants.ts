@@ -60,12 +60,12 @@ export const PROJECTS = [
 	{
 		id: 1,
 		title: "Fuzzy Credit Scoring System",
-		year: "2025",
+		year: "2024 - 2025",
 		description:
 			"Intelligent credit assessment using fuzzy logic for 5C analysis. Built with MATLAB and web interface. Officially copyrighted by Indonesian Ministry of Law.",
 		tech: ["MATLAB", "Fuzzy Logic", "Decision Support System"],
 		icon: "💳",
-		image: "/projects/fuzzy-credit.jpg", // Add this line
+		// Remove: image: "/projects/fuzzy-credit.jpg",
 		link: "https://pdki-indonesia.dgip.go.id/detail/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
 		github: "https://github.com/Bayudistirar/fuzzy-credit-system",
 	},
@@ -77,7 +77,7 @@ export const PROJECTS = [
 			"Automated plant monitoring with fuzzy logic control. Processes real-time sensor data to regulate water pump and cooling fan. Published in national journal.",
 		tech: ["Arduino Uno", "Fuzzy Logic", "MATLAB", "IoT"],
 		icon: "🌱",
-		image: "/projects/aloe-vera.jpg", // Add this line
+		// Remove: image: "/projects/aloe-vera.jpg",
 		link: "http://ojs.unud.ac.id/index.php/jnatia/article/download/115988/57452/",
 	},
 	{
@@ -88,7 +88,7 @@ export const PROJECTS = [
 			"Full-featured content management system with Laravel backend and Vue.js frontend. User authentication, RBAC, content versioning, and media management.",
 		tech: ["PHP", "Laravel", "Vue.js", "MySQL"],
 		icon: "📝",
-		image: "/projects/lokacms.jpg", // Add this line
+		// Remove: image: "/projects/lokacms.jpg",
 		demo: "https://www.figma.com/proto/bo7B3d7uEJK5yJpyOuIHWf/PKL?page-id=0%3A1&node-id=55-48&p=f&viewport=363%2C-1373%2C0.09&t=9825OYFGVR8y5Nxs-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=55%3A48",
 	},
 ];

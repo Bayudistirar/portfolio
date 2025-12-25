@@ -17,23 +17,23 @@ module.exports = {
         'xl': '1280px',
         '2xl': '1536px',
       },
-      colors: {
-        bg: {
-          primary: "#0a0a0a",
-          secondary: "#111111",
-          tertiary: "#1a1a1a",
-        },
-        text: {
-          primary: "#e8e8e8",
-          secondary: "#a0a0a0",
-          muted: "#6a6a6a",
-        },
-        accent: {
-          DEFAULT: "#ff6b35",
-          dim: "#cc5529",
-        },
-        border: "#1a1a1a",
+    colors: {
+      bg: {
+        primary: "#0a0a0a",
+        secondary: "#111111",
+        tertiary: "#1a1a1a",
       },
+      text: {
+        primary: "#e8e8e8",
+        secondary: "#a0a0a0",
+        muted: "#888888",  // Changed from #6a6a6a to #888888 for better contrast
+      },
+      accent: {
+        DEFAULT: "#ff6b35",
+        dim: "#cc5529",
+      },
+      border: "#1a1a1a",
+    },
       fontFamily: {
         mono: ["var(--font-jetbrains-mono)"],
         serif: ["var(--font-playfair)"],
