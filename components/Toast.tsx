@@ -13,7 +13,7 @@ export default function Toast({ message, onClose }: ToastProps) {
 	}, [onClose]);
 
 	return (
-		<div className="fixed bottom-lg right-lg z-50 animate-slide-up">
+		<div className="fixed bottom-lg right-lg z-[9999] animate-slide-up">
 			<div className="bg-bg-tertiary border border-accent/30 rounded px-lg py-md shadow-lg backdrop-blur-md">
 				<p className="text-sm text-text-primary flex items-center gap-sm">
 					<svg
