@@ -80,11 +80,8 @@ export const PROJECTS = [
 			"Credit Scoring",
 			"Web Interface",
 		],
-		link: null,
 		icon: "💳",
-		image: null,
 		github: "https://github.com/Bayudistirar/fuzzy-credit-system",
-		demo: null,
 	},
 	{
 		id: 2,
@@ -100,11 +97,7 @@ export const PROJECTS = [
 			"IoT",
 			"Sensor Integration",
 		],
-		link: null,
 		icon: "🌱",
-		image: null,
-		github: null,
-		demo: null,
 	},
 	{
 		id: 3,
@@ -113,11 +106,7 @@ export const PROJECTS = [
 		description:
 			"Smart door locking system with remote monitoring and control capabilities. Built RESTful API using Node.js and Express for real-time sensor data processing. Implemented WebSocket communication for live dashboard monitoring with temperature and humidity trend visualization using Chart.js.",
 		tech: ["ESP32", "Node.js", "Express", "WebSocket", "Chart.js", "Firebase"],
-		link: null,
 		icon: "🔐",
-		image: null,
-		github: null,
-		demo: null,
 	},
 ];
 
