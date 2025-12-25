@@ -1,15 +1,27 @@
 "use client";
 import { useState } from "react";
 import { PERSONAL_INFO, NAV_ITEMS, SOCIAL_LINKS } from "@/lib/constants";
+import Toast from "./Toast";
 
 export default function MobileHeader() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [showToast, setShowToast] = useState(false);
 
 	const handleNavClick = (id: string) => {
 		const element = document.getElementById(id);
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });
 			setIsMenuOpen(false);
+		}
+	};
+
+	const copyEmail = async () => {
+		try {
+			await navigator.clipboard.writeText("bayuramadhaan81@gmail.com");
+			setShowToast(true);
+			setIsMenuOpen(false);
+		} catch (err) {
+			console.error("Failed to copy email:", err);
 		}
 	};
 
@@ -190,10 +202,10 @@ export default function MobileHeader() {
 								<line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
 							</svg>
 						</a>
-						<a
-							href={SOCIAL_LINKS.email}
+						<button
+							onClick={copyEmail}
 							className="text-text-muted hover:text-accent transition-all duration-300 hover:-translate-y-1"
-							aria-label="Email"
+							aria-label="Copy Email"
 						>
 							<svg
 								width="20"
@@ -206,10 +218,17 @@ export default function MobileHeader() {
 								<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
 								<polyline points="22,6 12,13 2,6"></polyline>
 							</svg>
-						</a>
+						</button>
 					</div>
 				</div>
 			</nav>
+
+			{showToast && (
+				<Toast
+					message="Email copied to clipboard!"
+					onClose={() => setShowToast(false)}
+				/>
+			)}
 		</>
 	);
 }
