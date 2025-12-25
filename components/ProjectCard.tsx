@@ -51,10 +51,10 @@ export default function ProjectCard({
 			<div className="flex-1">
 				<div className="flex items-start justify-between mb-xs md:mb-sm">
 					<div>
-						<h3 className="text-lg md:text-xl lg:text-2xl font-medium text-text-primary mb-xs group-hover:text-accent transition-colors duration-300">
+						<h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-text-primary mb-xs group-hover:text-accent transition-colors duration-300 leading-tight">
 							{title}
 						</h3>
-						<div className="text-sm text-text-muted uppercase tracking-wider">
+						<div className="text-xs lg:text-sm text-text-muted uppercase tracking-[0.15em] font-semibold">
 							{year}
 						</div>
 					</div>
@@ -81,7 +81,7 @@ export default function ProjectCard({
 					{tech.map((item, index) => (
 						<span
 							key={index}
-							className="px-sm py-xs bg-accent/10 text-accent text-xs rounded font-medium"
+							className="px-sm py-xs bg-accent/10 text-accent text-[0.688rem] lg:text-xs rounded font-semibold uppercase tracking-wide"
 						>
 							{item}
 						</span>

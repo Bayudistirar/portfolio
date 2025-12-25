@@ -18,16 +18,16 @@ export default function Home() {
 					id="about"
 					className="mb-2xl lg:mb-3xl scroll-mt-[120px] lg:scroll-mt-2xl"
 				>
-					<div className="mb-xl lg:mb-2xl">
-						<div className="text-xs text-accent tracking-[0.2em] font-medium mb-sm uppercase">
+					<div className="mb-lg lg:mb-xl">
+						<div className="text-[0.688rem] md:text-xs text-accent tracking-[0.25em] font-semibold mb-sm uppercase">
 							01
 						</div>
-						<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-text-primary tracking-tighter">
+						<h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-text-primary tracking-tighter">
 							About
 						</h2>
 					</div>
 
-					<div className="space-y-lg lg:space-y-xl">
+					<div className="space-y-md lg:space-y-lg">
 						<p className="text-base lg:text-lg text-text-secondary leading-phi">
 							A results-oriented Computer Science student from{" "}
 							<a
@@ -46,7 +46,7 @@ export default function Home() {
 						<p className="text-base lg:text-lg text-text-secondary leading-phi">
 							Combines strong software development fundamentals with practical
 							IoT and hardware integration experience. Currently maintaining a{" "}
-							<span className="text-accent font-medium">3.74/4.00 GPA</span>{" "}
+							<span className="text-accent font-semibold">3.74/4.00 GPA</span>{" "}
 							while specializing in wireless sensor networks and developing
 							intelligent systems that bridge the gap between embedded systems
 							and modern web technologies.
@@ -67,11 +67,11 @@ export default function Home() {
 					id="experience"
 					className="mb-2xl lg:mb-3xl scroll-mt-[120px] lg:scroll-mt-2xl"
 				>
-					<div className="mb-xl lg:mb-2xl">
-						<div className="text-xs text-accent tracking-[0.2em] font-medium mb-sm uppercase">
+					<div className="mb-lg lg:mb-xl">
+						<div className="text-[0.688rem] md:text-xs text-accent tracking-[0.25em] font-semibold mb-sm uppercase">
 							02
 						</div>
-						<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-text-primary tracking-tighter">
+						<h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-text-primary tracking-tighter">
 							Experience
 						</h2>
 					</div>
@@ -88,11 +88,11 @@ export default function Home() {
 					id="projects"
 					className="mb-2xl lg:mb-3xl scroll-mt-[120px] lg:scroll-mt-2xl"
 				>
-					<div className="mb-xl lg:mb-2xl">
-						<div className="text-xs text-accent tracking-[0.2em] font-medium mb-sm uppercase">
+					<div className="mb-lg lg:mb-xl">
+						<div className="text-[0.688rem] md:text-xs text-accent tracking-[0.25em] font-semibold mb-sm uppercase">
 							03
 						</div>
-						<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-text-primary tracking-tighter">
+						<h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-text-primary tracking-tighter">
 							Projects
 						</h2>
 					</div>
@@ -109,11 +109,11 @@ export default function Home() {
 					id="publications"
 					className="mb-2xl lg:mb-3xl scroll-mt-[120px] lg:scroll-mt-2xl"
 				>
-					<div className="mb-xl lg:mb-2xl">
-						<div className="text-xs text-accent tracking-[0.2em] font-medium mb-sm uppercase">
+					<div className="mb-lg lg:mb-xl">
+						<div className="text-[0.688rem] md:text-xs text-accent tracking-[0.25em] font-semibold mb-sm uppercase">
 							04
 						</div>
-						<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-text-primary tracking-tighter">
+						<h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-text-primary tracking-tighter">
 							Publications
 						</h2>
 					</div>
@@ -122,13 +122,13 @@ export default function Home() {
 						{PUBLICATIONS.map((pub) => {
 							const content = (
 								<>
-									<h3 className="text-xl md:text-2xl lg:text-2xl font-medium text-text-primary mb-sm group-hover:text-accent transition-colors duration-300">
+									<h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-text-primary mb-sm group-hover:text-accent transition-colors duration-300 leading-tight">
 										{pub.title}
 									</h3>
-									<div className="text-sm lg:text-base text-text-secondary mb-md">
+									<div className="text-sm lg:text-base text-text-secondary mb-xs">
 										{pub.journal} · {pub.volume} · {pub.pages}
 									</div>
-									<div className="text-xs text-accent uppercase tracking-wider mb-md">
+									<div className="text-xs lg:text-sm text-accent uppercase tracking-wider mb-md font-semibold">
 										{pub.role} · {pub.year}
 									</div>
 									<p className="text-base lg:text-lg text-text-secondary leading-phi">
@@ -163,15 +163,15 @@ export default function Home() {
 
 				{/* Footer */}
 				<footer className="pt-lg lg:pt-xl mt-lg lg:mt-xl border-t border-border">
-					<div className="space-y-md">
-						<p className="text-sm lg:text-base text-text-muted">
-							Designed & built by Bayu Yudistira Ramadhan
-						</p>
-						<p className="text-xs lg:text-sm text-text-muted/70">
-							Built with Next.js, TypeScript & Tailwind CSS
-						</p>
-						<p className="text-xs text-text-muted/70">Denpasar, Bali · 2024</p>
-					</div>
+					<p className="text-sm lg:text-base text-text-muted mb-sm">
+						Designed & built by Bayu Yudistira Ramadhan
+					</p>
+					<p className="text-xs lg:text-sm text-text-muted/60">
+						Next.js · TypeScript · Tailwind CSS
+					</p>
+					<p className="text-xs text-text-muted/60 mt-md">
+						Denpasar, Bali · 2024
+					</p>
 				</footer>
 			</main>
 		</div>

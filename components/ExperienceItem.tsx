@@ -24,24 +24,24 @@ export default function ExperienceItem({
 
 	const content = (
 		<>
-			<div className="text-sm text-text-muted uppercase tracking-wider font-medium mb-md md:mb-0">
+			<div className="text-xs lg:text-sm text-text-muted uppercase tracking-[0.15em] font-semibold mb-md md:mb-0">
 				{date}
 			</div>
 			<div>
-				<h3 className="text-lg md:text-xl lg:text-2xl font-medium text-text-primary mb-xs group-hover:text-accent transition-colors duration-300">
+				<h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-text-primary mb-xs group-hover:text-accent transition-colors duration-300 leading-tight">
 					{role}
 				</h3>
-				<div className="text-base lg:text-lg text-text-secondary mb-sm md:mb-md">
+				<div className="text-base lg:text-lg text-text-secondary mb-md">
 					{company} · {type}
 				</div>
-				<p className="text-base lg:text-lg text-text-secondary leading-phi mb-sm md:mb-md">
+				<p className="text-sm md:text-base lg:text-base text-text-secondary leading-phi mb-md">
 					{description}
 				</p>
 				<div className="flex flex-wrap gap-xs md:gap-sm">
 					{tech.map((item, index) => (
 						<span
 							key={index}
-							className="px-sm py-xs bg-accent/10 text-accent text-xs rounded font-medium"
+							className="px-sm py-xs bg-accent/10 text-accent text-[0.688rem] lg:text-xs rounded font-semibold uppercase tracking-wide"
 						>
 							{item}
 						</span>
