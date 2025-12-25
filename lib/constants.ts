@@ -26,6 +26,7 @@ export const NAV_ITEMS = [
 export const SOCIAL_LINKS = {
 	github: "https://github.com/Bayudistirar",
 	linkedin: "https://www.linkedin.com/in/bayu-yudistira-ramadhan/",
+	instagram: "https://www.instagram.com/bayudistira.r/",
 	email: "mailto:bayuramadhaan81@gmail.com",
 };
 
