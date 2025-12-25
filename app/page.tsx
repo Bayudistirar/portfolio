@@ -29,7 +29,26 @@ export default function Home() {
 
 					<div className="space-y-md">
 						<p className="text-sm md:text-base text-text-secondary leading-phi">
-							A results-oriented Computer Science student from{" "}
+							Back in 2022, I started exploring IoT systems and discovered my
+							passion for building intelligent solutions that bridge hardware
+							and software. Fast-forward to today, and I&apos;ve had the
+							privilege of developing web applications at{" "}
+							<a
+								href="https://gecko.co.id/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-accent relative after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-px after:bg-accent after:opacity-30 hover:text-text-primary hover:after:opacity-100 transition-all duration-300"
+							>
+								a tech company
+							</a>
+							, publishing research in national journals, and earning official
+							copyright for my decision support system.
+						</p>
+
+						<p className="text-sm md:text-base text-text-secondary leading-phi">
+							My main focus these days is building intelligent systems that
+							combine IoT, machine learning, and full-stack development.
+							I&apos;m currently pursuing my degree at{" "}
 							<a
 								href="https://www.unud.ac.id/"
 								target="_blank"
@@ -38,26 +57,15 @@ export default function Home() {
 							>
 								Udayana University
 							</a>{" "}
-							with hands-on experience in full-stack development. Proficient in
-							building and maintaining scalable web applications using PHP
-							Laravel, Vue.js, and React.
+							with a <span className="text-accent font-semibold">3.74 GPA</span>
+							, specializing in wireless sensor networks and scalable web
+							applications.
 						</p>
 
 						<p className="text-sm md:text-base text-text-secondary leading-phi">
-							Combines strong software development fundamentals with practical
-							IoT and hardware integration experience. Currently maintaining a{" "}
-							<span className="text-accent font-semibold">3.74/4.00 GPA</span>{" "}
-							while specializing in wireless sensor networks and developing
-							intelligent systems that bridge the gap between embedded systems
-							and modern web technologies.
-						</p>
-
-						<p className="text-sm md:text-base text-text-secondary leading-phi">
-							Published research on fuzzy logic-based IoT systems in national
-							journals, with a focus on creating practical solutions for
-							real-world problems. Eager to contribute to innovative,
-							user-centric solutions that leverage the intersection of hardware
-							and software engineering.
+							When I&apos;m not coding, I&apos;m usually exploring new IoT
+							projects, contributing to research in fuzzy logic systems, or
+							experimenting with emerging technologies.
 						</p>
 					</div>
 				</section>
