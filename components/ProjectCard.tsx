@@ -7,11 +7,11 @@ interface ProjectCardProps {
 	year: string;
 	description: string;
 	tech: string[];
-	link: string | null;
+	link?: string | null; // Make optional
 	icon: string;
-	image?: string;
-	github?: string | null;
-	demo?: string | null;
+	image?: string; // Already optional
+	github?: string | null; // Make optional
+	demo?: string | null; // Make optional
 }
 
 export default function ProjectCard({
