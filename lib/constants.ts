@@ -43,25 +43,23 @@ export const getEmail = () => {
 export const EXPERIENCE = [
 	{
 		id: 1,
-		date: "Aug — Sep 2024",
-		role: "Full Stack Developer",
+		date: "AUG — SEP 2024",
+		role: "Full Stack Developer Intern",
 		company: "PT Econdelight",
 		type: "Internship",
-		location: "Badung, Bali",
 		description:
-			"Developed and maintained a full-stack hotel website using PHP Laravel for the backend and React for the frontend. Implemented and optimized PostgreSQL database queries to enhance application performance and ensure scalability. Utilized Git for version control and collaborated within an Agile framework, actively participating in daily stand-ups and sprint planning.",
-		tech: ["Laravel 11", "React", "PostgreSQL", "Git", "Agile"],
-		link: null,
+			"Developed and maintained web applications using PHP Laravel and Vue.js. Collaborated with senior developers to implement new features and optimize database queries for improved performance.",
+		tech: ["PHP", "Laravel", "Vue.js", "MySQL", "Git"],
+		link: "https://gecko.co.id/",
 	},
 	{
 		id: 2,
-		date: "Sep 2022 — Present",
+		date: "SEP 2022 — PRESENT",
 		role: "Computer Science Student",
 		company: "Udayana University",
-		type: "Wireless Sensor Network",
-		location: "Badung, Bali",
+		type: "Education",
 		description:
-			"Pursuing Bachelor's degree in Computer Science with specialization in wireless sensor networks. Maintaining 3.74/4.00 GPA while developing practical projects in IoT systems, full-stack development, and intelligent algorithms. Published research on fuzzy logic-based IoT systems in national journals.",
+			"Pursuing Bachelor's degree in Computer Science with a focus on IoT systems, machine learning, and full-stack development. Current GPA: 3.74/4.00. Active in research projects developing practical projects in IoT systems, full-stack development, and intelligent algorithms. Published research on fuzzy logic-based IoT systems in national journals.",
 		tech: ["IoT Systems", "Web Development", "Research", "Embedded Systems"],
 		link: "https://www.unud.ac.id/",
 	},
