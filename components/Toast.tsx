@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 
 interface ToastProps {
 	message: string;
@@ -12,9 +13,12 @@ export default function Toast({ message, onClose }: ToastProps) {
 		return () => clearTimeout(timer);
 	}, [onClose]);
 
-	return (
-		<div className="fixed bottom-lg right-lg z-[9999] animate-slide-up">
-			<div className="bg-bg-tertiary border border-accent/30 rounded px-lg py-md shadow-lg backdrop-blur-md">
+	// Use portal to render at document root, escaping parent stacking contexts
+	if (typeof window === "undefined") return null;
+
+	return createPortal(
+		<div className="fixed bottom-lg right-lg z-[9999] animate-slide-up pointer-events-none">
+			<div className="bg-bg-tertiary border border-accent/30 rounded px-lg py-md shadow-lg backdrop-blur-md pointer-events-auto">
 				<p className="text-sm text-text-primary flex items-center gap-sm">
 					<svg
 						width="16"
@@ -30,6 +34,7 @@ export default function Toast({ message, onClose }: ToastProps) {
 					{message}
 				</p>
 			</div>
-		</div>
+		</div>,
+		document.body,
 	);
 }
